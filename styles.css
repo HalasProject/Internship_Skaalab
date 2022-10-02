@@ -1,92 +1,62 @@
-body {
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    color: #f5f6f7;
-    font-family: Tahoma;
-    font-size: 1rem; 
-   
+body{
+    text-align: center;
+    color:#333;
+    line-height: 1.5;
+}
+
+@media (max-width: 460px) {
+    h1 {
+      font-size: 3.5rem;
+      line-height: 1.2;
+    }
   }
 
-  body::before {
-    content: '';
-    position:fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    background: var(--color-darkblue);
-    background-image: linear-gradient(
-        115deg,
-        rgba(58, 58, 158, 0.8),
-        rgba(136, 136, 206, 0.7)
-      ),
-      url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
+img{
+    display: block;
+    max-width: 100%;
+    height:auto;
+    margin:0 auto;
 
-  h1[id="title"]{
-    margin:1em auto;
-    text-align:center;
-    color:white;
-  }
-  p[id="description"]{
-    margin:1em auto;
-    text-align:center;
-    color:white;
-    font-family:Tahoma;
-  
-  }
-  
-  form[id="survey-form"] {
-    width: 60vw;
-    max-width: 500px;
-    min-width: 300px;
-    margin: 0 auto;
-    padding-bottom: 2em;
-    padding-top: 2em;
-    padding-right:2.5em;
-    padding-left:2.5em;
-    border-radius:10px;
-    background-color:#1b1b32;
-  }
-  
-  fieldset{
-    border:none;
-    padding-left: 2rem 0;
-    padding-right: 2rem 0;
-  }
-  
-  label{
-    display:block;
-    margin:0.8rem 0;
-  }
-  
-  input,
-  textarea,
-  select {
-    margin: 10px 0 0 0;
-    width: 100%;
-    min-height: 2em;
-  }
-  
-  .inline{
-    width:unset;
-    margin:0 0.5em 0 0;
-    vertical-align:middle;
-  }
-  
-  input[type="submit"]{
-    background-color:rgb(0,127,0);
-  }
+}
 
-  .clue{
-    font-size:0.8rem;
+#img-div{
+    background: white;
+    margin:0;
+    padding: 10px;
+}
 
-  }
- 
-  
+#main{
+    margin: 30px 10px;
+    padding:15px;
+    background: #eee;
+    border-radius:5px;
+}
+
+#headline{
+    text-align: center;
+    margin: 50px 0;
+}
+
+ul{
+    text-align: left;
+    max-width: 550px;
+    margin:0 auto 50px auto;
+
+}
+
+#citazione{
+    font-style:italic;
+    max-width: 545px;
+    margin: 0 auto 50px auto;
+    text-align:left;
+
+}
+
+a{
+    color: black;
+}
+
+a:visited{
+    color:#74638f;
+
+}
